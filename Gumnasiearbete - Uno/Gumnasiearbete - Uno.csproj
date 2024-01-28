@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D0F207B-717F-49A2-90F8-F0CF8C3C4254}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gumnasiearbete___Uno</RootNamespace>
+    <AssemblyName>Gumnasiearbete - Uno</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardClasses\TakeTwoCard.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardClasses\ColorCard.cs" />
+    <Compile Include="CardClasses\ColorTakeFourCard.cs" />
+    <Compile Include="CardClasses\NumberCard.cs" />
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="CardClasses\PlayingCard.cs" />
+    <Compile Include="CardClasses\StopCard.cs" />
+    <Compile Include="CardClasses\ReverseCard.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestBild.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNOCardGamePlayingCardFamilyFriendTravelInstruction-SKUspanitemprop156449-7-320x320.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_Take_Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_Reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_Take_Four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_Take_Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_Reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_Take_Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow_Reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngfind.com-green-card-png-3806009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Take_Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Reverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Static.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
